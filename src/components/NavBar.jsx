@@ -15,7 +15,7 @@ const NavBar = () => {
 
                <div  className='w-full bg-black/20 h-[80px] md:px-8 backdrop-blur-2xl rounded-full  flex items-center justify-between  text-3xl text-white '  >
                      <Link 
-                     activeClass='active' smooth={true} spy={true}
+                     activeClass='active' smooth={true} spy={true} offset={-200}
                      to='home' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center '  >
                               <BiHomeAlt></BiHomeAlt>
                     </Link>
