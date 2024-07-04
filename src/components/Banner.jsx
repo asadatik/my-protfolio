@@ -1,4 +1,4 @@
-import image from '../assets/avatar.svg';
+// import image from '../assets/avatar.svg';
 // import { FaGithub, FaFacebook ,FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
@@ -50,13 +50,13 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='text-lg my-6'
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit nisi, temporibus quis maiores eum quibusdam odit inventore, quidem necessitatibus facilis officiis cumque aspernatur culpa dicta numquam porro! Ut, earum.
+             As a passionate junior front-end developer, I craft dynamic and responsive websites using the latest technologies. With strong skills in HTML, CSS, and JavaScript, I create seamless user experiences that blend functionality and design.
             </motion.p>
           </motion.div>
-          
+
           <div className='flex gap-4'>
-          
-            
+
+
             {/* Download Resume Button */}
             <a href="/placeholder_resume.txt" download="John_Doe_Resume.txt">
               <button className="btn text-xl font-bold text-black btn-sm"><FaFileDownload className='text-yellow-100' /> Resume</button>
@@ -65,15 +65,17 @@ const Banner = () => {
             <button className="btn text-xl font-bold text-yellow-200 btn-sm">Contact Me</button>
           </div>
         </div>
-        
+
         {/* IMAGE */}
         <motion.div
+          className='    '
           variants={fadeIn('down', 0.5)}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.7 }}
         >
-          <img src={image} alt="Profile" />
+          <img className="  bg-about bg-contain bg-no-repeat mix-blend-lighten   md:w-96  rounded-full" src="https://i.ibb.co/vYrPhpW/IMG-20240617-WA0015-1-1.jpg" alt="" />
+
         </motion.div>
       </div>
     </div>

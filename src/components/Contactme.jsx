@@ -1,10 +1,12 @@
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
-import  { useRef } from 'react';
+import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
+import { FcCallback } from 'react-icons/fc';
+import { BiLogoGmail } from 'react-icons/bi';
 
 
 
@@ -12,34 +14,34 @@ const Contactme = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm('service_mi57t0p', 'template_0y3gqsn', form.current, {
-          publicKey: 'lD32hfl7cNbiqhBYH',
-        })
-        .then(
-          () => {
-            console.log('SUCCESS!');
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: "Message sent Successfully",
-                showConfirmButton: false,
-                timer: 3000
-              });
+        e.preventDefault();
 
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-            Swal.fire({
-                title: 'Error!',
-                text: 'Message not sent',
-                icon: 'error',
-                confirmButtonText: 'Cool'
-              })
-          },
-        );
+        emailjs
+            .sendForm('service_mi57t0p', 'template_0y3gqsn', form.current, {
+                publicKey: 'lD32hfl7cNbiqhBYH',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    Swal.fire({
+                        position: "center",
+                        icon: "success",
+                        title: "Message sent Successfully",
+                        showConfirmButton: false,
+                        timer: 3000
+                    });
+
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Message not sent',
+                        icon: 'error',
+                        confirmButtonText: 'Cool'
+                    })
+                },
+            );
     };
     return (
         <div>
@@ -56,7 +58,7 @@ const Contactme = () => {
                                         <input
                                             type="text"
                                             name="fullName"
-                                           
+
                                             placeholder="Your name"
                                             className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                         />
@@ -67,7 +69,7 @@ const Contactme = () => {
                                         <input
                                             type="email"
                                             name="email"
-                                          
+
                                             placeholder="johndoe@example.com"
                                             className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                         />
@@ -78,7 +80,7 @@ const Contactme = () => {
                                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
                                     <textarea
                                         name="message"
-                                       
+
                                         placeholder="Message"
                                         className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                                     ></textarea>
@@ -86,7 +88,7 @@ const Contactme = () => {
 
                                 <button
                                     type="submit"
-                                    className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white text-xl capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                                    className="w-full px-6 py-3 mt-4 font-medium tracking-wide text-white text-xl capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
                                 >
                                     Send Message
                                 </button>
@@ -94,35 +96,34 @@ const Contactme = () => {
                         </div>
 
                         <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
-                            <div className="mt-6 w-80 md:mt-8">
-                                <h3 className="text-gray-600 dark:text-gray-300">Contact Information</h3>
+                            <img className="   w-96    rounded-full" src="https://i.ibb.co/vYrPhpW/IMG-20240617-WA0015-1-1.jpg" alt="" />
+
+                            <div className="mt-6 w-80">
+
+                                <div>
+                                    <h1 className=' flex gap-2   text-xl'  > <FcCallback />    +880 1835210087      </h1>
+                                    <h1 className=' flex gap-2   text-xl'  > <BiLogoGmail className='text-amber-300' />  asadatik1995@gmail.com     </h1>
+
+
+                                </div>
                                 {/* Social media icons */}
-                                <div className="flex mt-4 -mx-1.5">
+                                <div className="flex mt-4 space-x-4">
                                     <a
-                                        className="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
-                                        href="YOUR_LINKEDIN_URL"
+                                        className="p-3 px-4 rounded-full bg-blue-600 text-white transition-transform duration-300 transform hover:scale-110 hover:bg-blue-800"
+                                        href="https://www.facebook.com/profile.php?id=100085206032914"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                                        <FontAwesomeIcon icon={faFacebook} size="lg" />
                                     </a>
 
                                     <a
-                                        className="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
-                                        href="YOUR_FACEBOOK_URL"
+                                        className="p-3 px-4 rounded-full bg-sky-800 text-white transition-transform duration-300 transform hover:scale-110 hover:bg-gray-900"
+                                        href="https://github.com/asadatik"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <FontAwesomeIcon icon={faFacebook} size="2x" />
-                                    </a>
-
-                                    <a
-                                        className="mx-1.5 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
-                                        href="YOUR_GITHUB_URL"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <FontAwesomeIcon icon={faGithub} size="2x" />
+                                        <FontAwesomeIcon icon={faGithub} size="lg" />
                                     </a>
                                 </div>
                             </div>
