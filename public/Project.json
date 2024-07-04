@@ -1,0 +1,44 @@
+[
+    {
+      "name": "NestQuestHub",
+      "image": "https://i.ibb.co/VTB7VcP/Screenshot-2024-07-04-160843.png",
+      "description": "NestQuestHub is a premier platform for discovering and exploring residential real estate properties, offering an intuitive and engaging experience for users.",
+      "features": [
+        "Personalized Recommendations: Receive tailored property suggestions based on your unique preferences.",
+        "Interactive Property Exploration: Explore detailed property listings with photos, floor plans, and virtual tours.",
+        "Effortless User Experience: Quick and easy registration, responsive design, and visually appealing animations."
+      ],
+      "technologies": ["HTML", "CSS", "Tailwind CSS", "ReactJS", "Firebase", "AOS", "Swiper", "React Icons", "SweetAlert2", "Vercel"],
+      "liveLink": "https://real-estate-bussiness-88e8c.web.app/",
+      "githubClientLink": "https://github.com/asadatik/Real-estate-A9"
+    },
+    {
+      "name": "FarmaBazar",
+      "image": "https://i.ibb.co/JqGV8ng/Screenshot-2024-07-04-160711.png",
+      "description": "Full-featured web application for purchasing medications and healthcare products online.",
+      "features": [
+        "Dynamic Home Page with engaging sliders and category cards.",
+        "Comprehensive Admin Dashboard for managing users, categories, and payments.",
+        "Secure Payment Integration with Stripe and detailed invoices."
+      ],
+      "technologies": ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Firebase Authentication", "Stripe"],
+      "liveLink": "https://medicine-selling.web.app/",
+      "githubClientLink": "https://github.com/asadatik/FarmaBazar-Client",
+      "githubServerLink": "https://github.com/asadatik/FarmaBazar-Server"
+    },
+    {
+      "name": "VOLUNTEERWAVE",
+      "image": "https://i.ibb.co/Stz1b3H/Screenshot-2024-07-04-160441.png",
+      "description": "Showcases our organization’s mission, achievements, and volunteer opportunities.",
+      "features": [
+        "Event Listings for browsing and signing up for volunteer activities.",
+        "Achievements Showcase with milestones, awards, testimonials, and visual galleries.",
+        "Community Engagement through workshops, mentorship programs, and interactive forums."
+      ],
+      "technologies": ["React", "Tailwind CSS", "Vite", "LocalForage", "Axios", "React Router DOM", "DaisyUI"],
+      "liveLink": "https://volunteer-49958.web.app/",
+      "githubClientLink": "https://github.com/asadatik/VOLUNTEERWAVE-client",
+      "githubServerLink": "https://github.com/asadatik/VOLUNTEERWAVE-server"
+    }
+  ]
+  

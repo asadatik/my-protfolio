@@ -14,7 +14,7 @@ import {motion} from 'framer-motion' ;
 
 const Banner = () => {
     return (
-        <div className=' min-h-[85vh] lg:min-h-[78vh] flex items-center  ' id='home'>
+        <div className=' min-h-[85vh] lg:min-h-[78vh] flex items-center section ' id='home'>
 
             <div className='container mx-auto md:grid grid-cols-3'  >
 
@@ -26,7 +26,7 @@ const Banner = () => {
                           variants={fadeIn('up',0.3)} initial='hidden'
                           whileInView={'show'}
                           viewport={{once:false ,amount: 0.7}}
-                        className='text-3xl lg:text-6xl font-bold font-tertiary  uppercase' > Asdujjaman     <span>atik</span>            </motion.h1>
+                        className='text-3xl lg:text-5xl font-bold font-tertiary uppercase' > Asdujjaman     <span>atik</span>            </motion.h1>
                     </div>
 
 
