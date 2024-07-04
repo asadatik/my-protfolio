@@ -1,14 +1,12 @@
-
-import Contact from './components/contact';
-import Header from './components/Header';
-import Banner from './components/Banner';
 import About from './components/About';
-
+import Banner from './components/Banner';
+import Contactme from './components/Contactme';
+import Header from './components/Header'
 import NavBar from './components/NavBar';
+
 import Project from './components/Project/Project';
+
 import Skill from './components/Skill/Skill';
-
-
 
 const App = () => {
   return (
@@ -23,8 +21,8 @@ const App = () => {
         <About />
        <Project></Project>
        <Skill></Skill>
-       <Contact></Contact>
-      <div className='h-[4000px]'></div>
+       <Contactme></Contactme>
+      {/* <div className='h-[400px]'></div> */}
     </div>
   );
 };
