@@ -1,11 +1,24 @@
-// import image from '../assets/avatar.svg';
-// import { FaGithub, FaFacebook ,FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { FaFileDownload } from 'react-icons/fa';
-
+import { Link } from 'react-scroll';
+import resume from '../assets/Resume_of_ATIK.pdf'
 const Banner = () => {
+
+//  const handleDownloadResume = () => {
+//     const resumeUrl = '/public/Resume_of_ATIK.pdf';
+
+//     const link = document.createElement('a');
+//     link.href = resumeUrl;
+//     link.target = '_blank'; // Open in a new tab
+//     link.setAttribute('download', 'Resume_of_ATIK.pdf');
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+//   };      
+
+
   return (
     <div className='min-h-[85vh] lg:min-h-[78vh] flex items-center section' id='home'>
       <div className='container mx-auto md:grid grid-cols-3'>
@@ -50,32 +63,43 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='text-lg my-6'
             >
-             As a passionate junior front-end developer, I craft dynamic and responsive websites using the latest technologies. With strong skills in HTML, CSS, and JavaScript, I create seamless user experiences that blend functionality and design.
+              As a passionate junior front-end developer, I craft dynamic and responsive websites using the latest technologies. With strong skills in HTML, CSS, and JavaScript, I create seamless user experiences that blend functionality and design.
             </motion.p>
           </motion.div>
 
           <div className='flex gap-4'>
-
-
             {/* Download Resume Button */}
-            <a href="/placeholder_resume.txt" download="John_Doe_Resume.txt">
-              <button className="btn text-xl font-bold text-black btn-sm"><FaFileDownload className='text-yellow-100' /> Resume</button>
+             <a
+                href={resume} download='resume' 
+                 >
+              <button className="btn text-xl font-bold text-black btn-sm">
+                <FaFileDownload className='text-yellow-100' /> Resume
+              </button>
             </a>
+           
+                     
 
-            <button className="btn text-xl font-bold text-yellow-200 btn-sm">Contact Me</button>
+            <Link smooth={true} spy={true} to='contact'>
+              <button className="btn text-xl font-bold text-yellow-200 btn-sm">
+                Contact Me
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* IMAGE */}
         <motion.div
-          className='    '
+          className='md:w-96 rounded-full'
           variants={fadeIn('down', 0.5)}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.7 }}
         >
-          <img className="  bg-about bg-contain bg-no-repeat mix-blend-lighten   md:w-96  rounded-full" src="https://i.ibb.co/vYrPhpW/IMG-20240617-WA0015-1-1.jpg" alt="" />
-
+          <img
+            className="bg-about bg-contain   rounded-full    bg-no-repeat mix-blend-lighten"
+            src="https://i.ibb.co/vYrPhpW/IMG-20240617-WA0015-1-1.jpg"
+            alt="Profile"
+          />
         </motion.div>
       </div>
     </div>

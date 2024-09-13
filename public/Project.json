@@ -36,7 +36,7 @@
         "Community Engagement through workshops, mentorship programs, and interactive forums."
       ],
       "technologies": ["React", "Tailwind CSS", "Vite", "LocalForage", "Axios", "React Router DOM", "DaisyUI"],
-      "liveLink": "https://volunteer-49958.web.app/",
+      "liveLink": "https://comfy-dieffenbachia-fc789b.netlify.app/",
       "githubClientLink": "https://github.com/asadatik/VOLUNTEERWAVE-client",
       "githubServerLink": "https://github.com/asadatik/VOLUNTEERWAVE-server"
     }

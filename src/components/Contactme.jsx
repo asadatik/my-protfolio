@@ -1,7 +1,7 @@
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
@@ -125,6 +125,18 @@ const Contactme = () => {
                                     >
                                         <FontAwesomeIcon icon={faGithub} size="lg" />
                                     </a>
+
+                                    <a
+                                        className="p-3 px-4 rounded-full bg-blue-500 text-white transition-transform duration-300 transform hover:scale-110 hover:bg-blue-900"
+                                        href="https://www.linkedin.com/in/asadujjaman-atik"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+                                    </a>
+
+
+
                                 </div>
                             </div>
                         </div>

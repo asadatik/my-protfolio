@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 
 
 const Header = () => {
@@ -10,7 +11,10 @@ const Header = () => {
                   <div className="flex justify-between items-center">
                       <a href="#">  <h1 className="uppercase  text-4xl font-extrabold  text-amber-200 lg:tracking-[.25em] font-tertiary "  >Atik</h1>     </a>
                             
-                          <button className="btn text-lg font-bold text-yellow-100 btn-sm"> Work with me </button>
+                         <Link to="contact">
+                         <button className="btn text-lg font-bold text-yellow-100 btn-sm"> Work with me </button>
+
+                         </Link> 
 
                   </div>
 

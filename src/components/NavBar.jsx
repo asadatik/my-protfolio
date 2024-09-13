@@ -13,7 +13,7 @@ const NavBar = () => {
                 
               
 
-               <div  className='w-full bg-black/30 border-sky-500 border-2 h-[80px] md:px-8 backdrop-blur-2xl rounded-full  flex items-center justify-between  text-3xl text-white '  >
+               <div  className='w-full bg-black/30 border-sky-500 border-2 h-[50px] md:px-8 backdrop-blur-2xl rounded-full  flex items-center justify-between  text-3xl text-white '  >
                      <Link 
                      activeClass='active' smooth={true} spy={true} offset={-200}
                      to='home' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center '  >
