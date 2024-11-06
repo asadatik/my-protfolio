@@ -4,7 +4,7 @@ import Contactme from './components/Contactme';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header'
 import NavBar from './components/NavBar';
-
+import SpaceScene from './components/SpaceScene'; 
 import Project from './components/Project/Project';
 
 import Skill from './components/Skill/Skill';
@@ -14,9 +14,10 @@ const App = () => {
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
      
     
-        
+     <SpaceScene />
        
         <Header></Header>
+       
         <Banner></Banner>
         <NavBar></NavBar>
         <About />
