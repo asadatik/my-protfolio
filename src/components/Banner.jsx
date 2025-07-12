@@ -3,20 +3,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { FaFileDownload } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import resume from '../assets/Resume_of_ATIK.pdf'
+import resume from '../assets/Atik`s_Resume.pdf'
 const Banner = () => {
-
-//  const handleDownloadResume = () => {
-//     const resumeUrl = '/public/Resume_of_ATIK.pdf';
-
-//     const link = document.createElement('a');
-//     link.href = resumeUrl;
-//     link.target = '_blank'; // Open in a new tab
-//     link.setAttribute('download', 'Resume_of_ATIK.pdf');
-//     document.body.appendChild(link);
-//     link.click();
-//     document.body.removeChild(link);
-//   };      
 
 
   return (
@@ -80,7 +68,7 @@ const Banner = () => {
                      
 
             <Link smooth={true} spy={true} to='contact'>
-              <button className="btn text-xl font-bold text-yellow-200 btn-sm">
+              <button className="btn text-xl font-bold text-yellow-50 btn-sm">
                 Contact Me
               </button>
             </Link>

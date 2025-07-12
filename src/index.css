@@ -71,9 +71,12 @@
   }
 }
 
-/* html, body, #root {
+
+body {
+  background-color: #000;
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
-} */
+  
+}
+
+

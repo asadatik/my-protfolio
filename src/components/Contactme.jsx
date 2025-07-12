@@ -101,9 +101,8 @@ const Contactme = () => {
                             <div className="mt-6 w-80">
 
                                 <div>
-                                    <h1 className=' flex gap-2   text-xl'  > <FcCallback />    +880 1835210087      </h1>
+                                    <h1 className=' flex gap-2   text-xl'  > <FcCallback /> +880 1835210087 </h1>
                                     <h1 className=' flex gap-2   text-xl'  > <BiLogoGmail className='text-amber-300' />  asadatik1995@gmail.com     </h1>
-
 
                                 </div>
                                 {/* Social media icons */}
